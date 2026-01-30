@@ -1,12 +1,11 @@
 from rest_framework import serializers
 from auth_app.models import User
+from django.utils import timezone  # Use this instead of datetime.utcnow
 import jwt
 from decouple import config
-from datetime import datetime, timedelta
 
 class UserRegisterSerializer(serializers.Serializer):
     """Serializer for user registration"""
-    
     email = serializers.EmailField(required=True)
     password = serializers.CharField(write_only=True, min_length=8)
     password_confirm = serializers.CharField(write_only=True)
@@ -21,28 +20,19 @@ class UserRegisterSerializer(serializers.Serializer):
         return data
     
     def create(self, validated_data):
-        user = User(
+        # The AbstractUser way for SQLite
+        user = User.objects.create_user(
+            username=validated_data['email'],
             email=validated_data['email'],
+            password=validated_data['password'],
             first_name=validated_data['first_name'],
             last_name=validated_data['last_name'],
             department=validated_data.get('department'),
             year=validated_data.get('year'),
         )
-        user.set_password(validated_data['password'])
-        user.save()
-        
-        # Send verification email
-        from django.core.mail import send_mail
-        verification_token = user.generate_verification_token()
-        send_mail(
-            'Email Verification',
-            f'Click here to verify: {config("FRONTEND_URL")}/verify/{verification_token}',
-            config('DEFAULT_FROM_EMAIL'),
-            [user.email],
-        )
-        
         return user
 
+# ... Keep the rest of your serializers below this ...
 
 class UserLoginSerializer(serializers.Serializer):
     """Serializer for user login"""

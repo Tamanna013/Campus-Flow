@@ -1,15 +1,9 @@
-from mongoengine import (
-    Document, StringField, EmailField, BooleanField, DateTimeField,
-    ListField, ReferenceField, DictField, IntField, FloatField
-)
-from django.contrib.auth.hashers import make_password, check_password
-from datetime import datetime
+from django.contrib.auth.models import AbstractUser
+from django.db import models
 import uuid
-import jwt
-from decouple import config
 
-class User(Document):
-    """Custom User model for MongoDB"""
+class User(AbstractUser):
+    """Custom User model for SQLite/PostgreSQL"""
     
     ROLE_CHOICES = [
         ('admin', 'Administrator'),
@@ -17,108 +11,35 @@ class User(Document):
         ('participant', 'Participant/Member'),
     ]
     
-    PERMISSION_LEVELS = {
-        'admin': ['create_club', 'manage_users', 'approve_events', 'manage_resources', 'view_analytics'],
-        'organizer': ['create_event', 'manage_event', 'book_resource'],
-        'participant': ['register_event', 'view_resources'],
-    }
+    # We use email as the username for login
+    email = models.EmailField(unique=True)
     
-    id = StringField(primary_key=True, default=lambda: str(uuid.uuid4()))
-    email = EmailField(unique=True, required=True)
-    password_hash = StringField(required=True)
-    first_name = StringField(required=True, max_length=100)
-    last_name = StringField(required=True, max_length=100)
-    department = StringField(null=True, max_length=100)
-    year = StringField(null=True, choices=['1st', '2nd', '3rd', '4th', '5th'])
-    role = StringField(choices=ROLE_CHOICES, default='participant')
-    profile_picture = StringField(null=True)
-    bio = StringField(null=True)
-    phone = StringField(null=True)
+    # Custom fields
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    department = models.CharField(max_length=100, null=True, blank=True)
+    year = models.CharField(
+        max_length=10, 
+        null=True, 
+        blank=True, 
+        choices=[('1st', '1st'), ('2nd', '2nd'), ('3rd', '3rd'), ('4th', '4th'), ('5th', '5th')]
+    )
+    role = models.CharField(max_length=20, choices=ROLE_CHOICES, default='participant')
+    phone = models.CharField(max_length=20, null=True, blank=True)
+    bio = models.TextField(null=True, blank=True)
     
     # Status flags
-    is_active = BooleanField(default=True)
-    is_verified = BooleanField(default=False)
-    verification_token = StringField(null=True)
-    verification_token_expires = DateTimeField(null=True)
-    
-    # OAuth
-    oauth_providers = ListField(DictField(), default=[])
-    
-    # Preferences
-    notification_preferences = DictField(default={
-        'email_on_event_approval': True,
-        'email_on_booking_status': True,
-        'email_on_reminder': True,
-        'in_app_notifications': True,
-    })
-    
-    # Timestamps
-    created_at = DateTimeField(default=datetime.utcnow)
-    updated_at = DateTimeField(default=datetime.utcnow)
-    last_login = DateTimeField(null=True)
-    
-    meta = {
-        'collection': 'users',
-        'indexes': [
-            'email',
-            'is_active',
-            'role',
-        ],
-    }
-    
-    def set_password(self, password):
-        """Hash and set password"""
-        self.password_hash = make_password(password)
-        self.save()
-    
-    def check_password(self, password):
-        """Verify password"""
-        return check_password(password, self.password_hash)
-    
-    def get_full_name(self):
-        """Return user's full name"""
-        return f"{self.first_name} {self.last_name}".strip()
-    
-    def get_permissions(self):
-        """Get permissions based on role"""
-        return self.PERMISSION_LEVELS.get(self.role, [])
-    
-    def has_permission(self, permission):
-        """Check if user has specific permission"""
-        return permission in self.get_permissions()
-    
-    def generate_verification_token(self):
-        """Generate email verification token"""
-        token = jwt.encode(
-            {'user_id': self.id, 'exp': datetime.utcnow()},
-            config('JWT_SECRET_KEY'),
-            algorithm='HS256'
-        )
-        self.verification_token = token
-        self.save()
-        return token
-    
+    is_verified = models.BooleanField(default=False)
+
+    # Use email for authentication instead of username
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
+
     def __str__(self):
         return f"{self.get_full_name()} ({self.email})"
-    
-    class Meta:
-        app_label = 'auth_app'
 
-
-class OAuthProvider(Document):
-    """OAuth provider configuration"""
-    
-    name = StringField(required=True, unique=True)  # google, github, microsoft
-    client_id = StringField(required=True)
-    client_secret = StringField(required=True)
-    authorize_url = StringField(required=True)
-    token_url = StringField(required=True)
-    user_info_url = StringField(required=True)
-    is_active = BooleanField(default=True)
-    
-    meta = {
-        'collection': 'oauth_providers',
-    }
-    
-    class Meta:
-        app_label = 'auth_app'
+# If you need OAuth later, create it as a standard Model
+class OAuthProvider(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+    client_id = models.CharField(max_length=255)
+    client_secret = models.CharField(max_length=255)
+    is_active = models.BooleanField(default=True)

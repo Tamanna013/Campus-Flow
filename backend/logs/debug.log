@@ -1,2 +1,1224 @@
 INFO 2026-01-29 17:59:35,924 autoreload 20376 21256 Watching for file changes with StatReloader
 INFO 2026-01-29 18:00:21,374 autoreload 21216 4200 Watching for file changes with StatReloader
+INFO 2026-01-30 19:50:31,040 autoreload 6032 20420 Watching for file changes with StatReloader
+INFO 2026-01-30 19:53:00,569 autoreload 4112 20380 Watching for file changes with StatReloader
+INFO 2026-01-30 19:54:17,215 autoreload 20420 18104 Watching for file changes with StatReloader
+INFO 2026-01-30 19:54:17,595 server 20420 12304 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2026-01-30 19:54:17,596 server 20420 12304 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2026-01-30 19:54:17,598 server 20420 12304 Listening on TCP address 127.0.0.1:8000
+WARNING 2026-01-30 19:54:22,482 log 20420 12416 Not Found: /
+WARNING 2026-01-30 19:54:22,487 runserver 20420 12304 [33mHTTP GET / 404 [0.44, 127.0.0.1:58068][0m
+WARNING 2026-01-30 19:54:22,836 log 20420 12416 Not Found: /favicon.ico
+WARNING 2026-01-30 19:54:22,838 runserver 20420 12304 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:58068][0m
+WARNING 2026-01-30 19:54:32,384 log 20420 12416 Not Found: /api
+WARNING 2026-01-30 19:54:32,387 runserver 20420 12304 [33mHTTP GET /api 404 [0.04, 127.0.0.1:58068][0m
+INFO 2026-01-30 19:54:36,961 runserver 20420 12304 [32mHTTP GET /admin 301 [0.04, 127.0.0.1:58068][0m
+INFO 2026-01-30 19:54:37,047 runserver 20420 12304 [32mHTTP GET /admin/ 302 [0.08, 127.0.0.1:58068][0m
+INFO 2026-01-30 19:54:37,579 runserver 20420 12304 [mHTTP GET /admin/login/?next=/admin/ 200 [0.52, 127.0.0.1:58068][0m
+INFO 2026-01-30 19:54:38,163 runserver 20420 12304 [mHTTP GET /static/admin/css/dark_mode.css 200 [0.53, 127.0.0.1:62560][0m
+INFO 2026-01-30 19:54:38,179 runserver 20420 12304 [mHTTP GET /static/admin/css/base.css 200 [0.56, 127.0.0.1:58068][0m
+INFO 2026-01-30 19:54:38,203 runserver 20420 12304 [mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.57, 127.0.0.1:65134][0m
+INFO 2026-01-30 19:54:38,212 runserver 20420 12304 [mHTTP GET /static/admin/css/login.css 200 [0.57, 127.0.0.1:63397][0m
+INFO 2026-01-30 19:54:38,221 runserver 20420 12304 [mHTTP GET /static/admin/css/responsive.css 200 [0.58, 127.0.0.1:65166][0m
+INFO 2026-01-30 19:54:38,266 runserver 20420 12304 [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.07, 127.0.0.1:62560][0m
+INFO 2026-01-30 19:54:38,268 runserver 20420 12304 [mHTTP GET /static/admin/js/theme.js 200 [0.61, 127.0.0.1:50396][0m
+INFO 2026-01-30 19:55:35,259 runserver 20420 12304 [mHTTP POST /admin/login/?next=/admin/ 200 [0.84, 127.0.0.1:50396][0m
+INFO 2026-01-30 19:57:51,279 runserver 20420 12304 [32mHTTP POST /admin/login/?next=/admin/ 302 [0.92, 127.0.0.1:59761][0m
+INFO 2026-01-30 19:57:51,402 runserver 20420 12304 [mHTTP GET /admin/ 200 [0.11, 127.0.0.1:59761][0m
+INFO 2026-01-30 19:57:51,474 runserver 20420 12304 [mHTTP GET /static/admin/css/dashboard.css 200 [0.04, 127.0.0.1:59761][0m
+INFO 2026-01-30 19:57:51,536 runserver 20420 12304 [mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.05, 127.0.0.1:64780][0m
+INFO 2026-01-30 19:57:51,539 runserver 20420 12304 [mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.05, 127.0.0.1:59761][0m
+INFO 2026-01-30 19:58:09,376 runserver 20420 12304 [mHTTP OPTIONS /api/v1/auth/register/ 200 [0.00, 127.0.0.1:62368][0m
+WARNING 2026-01-30 19:58:09,419 log 20420 13092 Bad Request: /api/v1/auth/register/
+WARNING 2026-01-30 19:58:09,421 runserver 20420 12304 [31;1mHTTP POST /api/v1/auth/register/ 400 [0.03, 127.0.0.1:62368][0m
+ERROR 2026-01-30 19:58:17,048 log 20420 15248 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py", line 22, in register
+    user = serializer.save()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py", line 31, in create
+    user.set_password(validated_data['password'])
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\models.py", line 72, in set_password
+    self.save()
+    ~~~~~~~~~^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\document.py", line 440, in save
+    _ = self._get_collection()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\document.py", line 226, in _get_collection
+    db = cls._get_db()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\document.py", line 202, in _get_db
+    return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\connection.py", line 419, in get_db
+    conn = get_connection(alias)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\connection.py", line 321, in get_connection
+    raise ConnectionFailure(msg)
+mongoengine.connection.ConnectionFailure: You have not defined a default connection
+ERROR 2026-01-30 19:58:17,071 runserver 20420 12304 [35;1mHTTP POST /api/v1/auth/register/ 500 [1.23, 127.0.0.1:62368][0m
+ERROR 2026-01-30 19:58:22,782 log 20420 12416 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py", line 22, in register
+    user = serializer.save()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py", line 31, in create
+    user.set_password(validated_data['password'])
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\models.py", line 72, in set_password
+    self.save()
+    ~~~~~~~~~^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\document.py", line 440, in save
+    _ = self._get_collection()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\document.py", line 226, in _get_collection
+    db = cls._get_db()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\document.py", line 202, in _get_db
+    return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\connection.py", line 419, in get_db
+    conn = get_connection(alias)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\connection.py", line 321, in get_connection
+    raise ConnectionFailure(msg)
+mongoengine.connection.ConnectionFailure: You have not defined a default connection
+ERROR 2026-01-30 19:58:22,795 runserver 20420 12304 [35;1mHTTP POST /api/v1/auth/register/ 500 [0.90, 127.0.0.1:62368][0m
+INFO 2026-01-30 19:59:16,388 autoreload 7176 13848 Watching for file changes with StatReloader
+INFO 2026-01-30 19:59:16,801 server 7176 17976 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2026-01-30 19:59:16,801 server 7176 17976 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2026-01-30 19:59:16,803 server 7176 17976 Listening on TCP address 127.0.0.1:8000
+INFO 2026-01-30 19:59:55,122 autoreload 7176 13848 C:\Users\Tamanna\Desktop\event-management\backend\config\settings.py changed, reloading.
+INFO 2026-01-30 19:59:57,694 autoreload 14556 6836 Watching for file changes with StatReloader
+INFO 2026-01-30 19:59:58,190 server 14556 19260 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2026-01-30 19:59:58,191 server 14556 19260 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2026-01-30 19:59:58,196 server 14556 19260 Listening on TCP address 127.0.0.1:8000
+ERROR 2026-01-30 20:00:01,274 log 14556 20364 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py", line 22, in register
+    user = serializer.save()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py", line 31, in create
+    user.set_password(validated_data['password'])
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\models.py", line 72, in set_password
+    self.save()
+    ~~~~~~~~~^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\document.py", line 440, in save
+    _ = self._get_collection()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\document.py", line 226, in _get_collection
+    db = cls._get_db()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\document.py", line 202, in _get_db
+    return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\connection.py", line 419, in get_db
+    conn = get_connection(alias)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\mongoengine\connection.py", line 321, in get_connection
+    raise ConnectionFailure(msg)
+mongoengine.connection.ConnectionFailure: You have not defined a default connection
+ERROR 2026-01-30 20:00:01,293 runserver 14556 19260 [35;1mHTTP POST /api/v1/auth/register/ 500 [0.80, 127.0.0.1:54175][0m
+INFO 2026-01-30 20:01:23,739 autoreload 20204 11300 Watching for file changes with StatReloader
+INFO 2026-01-30 20:01:24,123 server 20204 17424 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2026-01-30 20:01:24,123 server 20204 17424 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2026-01-30 20:01:24,125 server 20204 17424 Listening on TCP address 127.0.0.1:8000
+INFO 2026-01-30 20:03:12,021 autoreload 20204 11300 C:\Users\Tamanna\Desktop\event-management\backend\auth_app\models.py changed, reloading.
+INFO 2026-01-30 20:03:14,652 autoreload 18356 19104 Watching for file changes with StatReloader
+INFO 2026-01-30 20:03:38,976 autoreload 18356 19104 C:\Users\Tamanna\Desktop\event-management\backend\config\settings.py changed, reloading.
+INFO 2026-01-30 20:03:43,218 autoreload 1400 18872 Watching for file changes with StatReloader
+INFO 2026-01-30 20:05:10,686 autoreload 19872 11492 Watching for file changes with StatReloader
+INFO 2026-01-30 20:05:11,033 server 19872 17588 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2026-01-30 20:05:11,034 server 19872 17588 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2026-01-30 20:05:11,036 server 19872 17588 Listening on TCP address 127.0.0.1:8000
+ERROR 2026-01-30 20:05:24,851 log 19872 15320 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py", line 22, in register
+    user = serializer.save()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py", line 36, in create
+    verification_token = user.generate_verification_token()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'generate_verification_token'
+ERROR 2026-01-30 20:05:24,872 runserver 19872 17588 [35;1mHTTP POST /api/v1/auth/register/ 500 [2.34, 127.0.0.1:57737][0m
+ERROR 2026-01-30 20:05:29,644 log 19872 15320 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_app_user.email
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py", line 22, in register
+    user = serializer.save()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py", line 32, in create
+    user.save()
+    ~~~~~~~~~^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_app_user.email
+ERROR 2026-01-30 20:05:29,681 runserver 19872 17588 [35;1mHTTP POST /api/v1/auth/register/ 500 [1.79, 127.0.0.1:57737][0m
+ERROR 2026-01-30 20:07:17,005 log 19872 15320 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_app_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py", line 22, in register
+    user = serializer.save()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py", line 32, in create
+    user.save()
+    ~~~~~~~~~^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_app_user.username
+ERROR 2026-01-30 20:07:17,032 runserver 19872 17588 [35;1mHTTP POST /api/v1/auth/register/ 500 [1.19, 127.0.0.1:59376][0m
+INFO 2026-01-30 20:08:36,800 autoreload 19872 11492 C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py changed, reloading.
+INFO 2026-01-30 20:08:39,405 autoreload 8200 11420 Watching for file changes with StatReloader
+INFO 2026-01-30 20:08:59,602 autoreload 10372 18868 Watching for file changes with StatReloader
+INFO 2026-01-30 20:10:38,956 autoreload 10372 18868 C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py changed, reloading.
+INFO 2026-01-30 20:10:41,809 autoreload 3304 10412 Watching for file changes with StatReloader
+INFO 2026-01-30 20:11:24,756 autoreload 18104 19996 Watching for file changes with StatReloader
+INFO 2026-01-30 20:13:39,467 autoreload 18104 19996 C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py changed, reloading.
+INFO 2026-01-30 20:13:42,446 autoreload 4568 18904 Watching for file changes with StatReloader
+INFO 2026-01-30 20:13:50,695 autoreload 4568 18904 C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py changed, reloading.
+INFO 2026-01-30 20:13:53,500 autoreload 18980 18284 Watching for file changes with StatReloader
+INFO 2026-01-30 20:13:54,020 server 18980 12764 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2026-01-30 20:13:54,022 server 18980 12764 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2026-01-30 20:13:54,025 server 18980 12764 Listening on TCP address 127.0.0.1:8000
+INFO 2026-01-30 20:14:06,836 autoreload 18980 18284 C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py changed, reloading.
+INFO 2026-01-30 20:14:09,343 autoreload 7684 1828 Watching for file changes with StatReloader
+INFO 2026-01-30 20:14:09,796 server 7684 6800 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2026-01-30 20:14:09,797 server 7684 6800 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2026-01-30 20:14:09,799 server 7684 6800 Listening on TCP address 127.0.0.1:8000
+ERROR 2026-01-30 20:14:12,544 log 7684 12508 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: auth_app_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py", line 23, in register
+    user = serializer.save()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py", line 24, in create
+    user = User.objects.create_user(
+        username=validated_data['email'],
+    ...<5 lines>...
+        year=validated_data.get('year'),
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\models.py", line 161, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\models.py", line 155, in _create_user
+    user.save(using=self._db)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: auth_app_user
+ERROR 2026-01-30 20:14:12,572 runserver 7684 6800 [35;1mHTTP POST /api/v1/auth/register/ 500 [1.46, 127.0.0.1:60310][0m
+ERROR 2026-01-30 20:14:16,800 log 7684 12508 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: auth_app_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py", line 23, in register
+    user = serializer.save()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py", line 24, in create
+    user = User.objects.create_user(
+        username=validated_data['email'],
+    ...<5 lines>...
+        year=validated_data.get('year'),
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\models.py", line 161, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\models.py", line 155, in _create_user
+    user.save(using=self._db)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: auth_app_user
+ERROR 2026-01-30 20:14:16,820 runserver 7684 6800 [35;1mHTTP POST /api/v1/auth/register/ 500 [0.79, 127.0.0.1:60310][0m
+INFO 2026-01-30 20:14:51,352 autoreload 1400 9312 Watching for file changes with StatReloader
+INFO 2026-01-30 20:14:51,768 server 1400 7692 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2026-01-30 20:14:51,769 server 1400 7692 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2026-01-30 20:14:51,770 server 1400 7692 Listening on TCP address 127.0.0.1:8000
+ERROR 2026-01-30 20:15:02,949 log 1400 10372 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: auth_app_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py", line 23, in register
+    user = serializer.save()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py", line 24, in create
+    user = User.objects.create_user(
+        username=validated_data['email'],
+    ...<5 lines>...
+        year=validated_data.get('year'),
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\models.py", line 161, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\models.py", line 155, in _create_user
+    user.save(using=self._db)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: auth_app_user
+ERROR 2026-01-30 20:15:02,979 runserver 1400 7692 [35;1mHTTP POST /api/v1/auth/register/ 500 [1.36, 127.0.0.1:64656][0m
+ERROR 2026-01-30 20:16:18,777 log 1400 10372 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: auth_app_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py", line 23, in register
+    user = serializer.save()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py", line 24, in create
+    user = User.objects.create_user(
+        username=validated_data['email'],
+    ...<5 lines>...
+        year=validated_data.get('year'),
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\models.py", line 161, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\models.py", line 155, in _create_user
+    user.save(using=self._db)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: auth_app_user
+ERROR 2026-01-30 20:16:18,808 runserver 1400 7692 [35;1mHTTP POST /api/v1/auth/register/ 500 [1.12, 127.0.0.1:53534][0m
+INFO 2026-01-30 22:46:09,471 runserver 1400 7692 [mHTTP OPTIONS /api/v1/auth/register/ 200 [0.12, 127.0.0.1:53872][0m
+ERROR 2026-01-30 22:46:11,893 log 1400 10372 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: auth_app_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 555, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 504, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\asgiref\sync.py", line 559, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\views.py", line 23, in register
+    user = serializer.save()
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\auth_app\serializers.py", line 24, in create
+    user = User.objects.create_user(
+        username=validated_data['email'],
+    ...<5 lines>...
+        year=validated_data.get('year'),
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\models.py", line 161, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\models.py", line 155, in _create_user
+    user.save(using=self._db)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Tamanna\Desktop\event-management\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: auth_app_user
+ERROR 2026-01-30 22:46:11,932 runserver 1400 7692 [35;1mHTTP POST /api/v1/auth/register/ 500 [2.42, 127.0.0.1:53872][0m
+INFO 2026-01-30 22:47:34,468 autoreload 18052 20572 Watching for file changes with StatReloader
+INFO 2026-01-30 22:47:34,959 server 18052 4688 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2026-01-30 22:47:34,960 server 18052 4688 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2026-01-30 22:47:34,962 server 18052 4688 Listening on TCP address 127.0.0.1:8000
+INFO 2026-01-30 22:48:28,807 autoreload 11956 19056 Watching for file changes with StatReloader
+INFO 2026-01-30 22:48:29,172 server 11956 20396 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2026-01-30 22:48:29,172 server 11956 20396 Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO 2026-01-30 22:48:29,174 server 11956 20396 Listening on TCP address 127.0.0.1:8000
+INFO 2026-01-30 22:48:53,087 runserver 11956 20396 [mHTTP POST /api/v1/auth/register/ 201 [0.95, 127.0.0.1:60678][0m
+INFO 2026-01-30 22:48:59,963 runserver 11956 20396 [mHTTP OPTIONS /api/v1/auth/login/ 200 [0.01, 127.0.0.1:60678][0m
+INFO 2026-01-30 22:49:00,867 runserver 11956 20396 [mHTTP POST /api/v1/auth/login/ 200 [0.90, 127.0.0.1:60678][0m
+INFO 2026-01-30 22:49:00,965 runserver 11956 20396 [mHTTP OPTIONS /api/v1/users/me/ 200 [0.02, 127.0.0.1:60678][0m
+WARNING 2026-01-30 22:49:01,032 log 11956 21288 Not Found: /api/v1/users/me/
+WARNING 2026-01-30 22:49:01,034 runserver 11956 20396 [33mHTTP GET /api/v1/users/me/ 404 [0.05, 127.0.0.1:60678][0m
